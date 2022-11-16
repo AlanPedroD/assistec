@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho{
+    text-align: center;
+    /* background-color: burlywood; */
+    color: #fff;
+    padding: 25px;
+}
+
+.principal{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 37px;
+    /* border: 1px solid coral; */
+    width: 28%;
+    margin: auto;
+    background-color: coral;
+    margin-bottom: 20px;
+    color: #000;
+    border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    width: 1240px;
+    justify-content: center;
+    /* background-color: cornflowerblue; */
+    background-image: url(imagens/KeciaCell.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    margin: auto;
+}
+
+.servicos{
+    /* background-color: darkseagreen; */
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    justify-content: center;
+    padding: 5px;
+}
+
+.servicos h2{
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+    background-color: black;
+    padding-left: 5px;
+}
+
+.servicos a{
+    text-decoration: none;
+    color: coral;
+}
+
+.contato{
+    margin-top: 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.contato img{
+    display: flex;
+    width: 40px;
+    padding: 5px;
+}
+
+
+@media (max-width: 1257px){
+    .container{
+        width: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .principal{
+        width: auto;
+    }
+   
+}
